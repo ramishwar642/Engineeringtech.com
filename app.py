@@ -21,7 +21,7 @@ JOBS = [
     'id' :3,
     'title' :'Frontent Engineer',
     'location' :'Noida',
-    'salary' :'Rs,15,00,000'
+    'salary' :'Rs,12,00,000'
   },
 
    {
