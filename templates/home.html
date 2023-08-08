@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+  <head>
+    <title> search for Job </title>
+    <!--5step -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      #banner{
+        height:360px;
+        width:100%;
+        object-fit :cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="img-fluid" id="banner" src = "https://engineeringbraincom.iamramishwar99.repl.co/static/banner.jpg">
+     <div class="container">
+    <h1 class="text-center mt-2 mb-4">
+      {{company_name}} Careers
+    </h1>
+     <p class="lead">Pellentesque in lorem id sem semper vehicula ut ut turpis. Suspendisse dignissim lorem est, ut sagittis elit rutrum placerat. Nullam mattis risus ac augue porta, quis auctor lectus luctus. Sed lobortis mattis accumsan. Phasellus ut tellus vitae justo suscipit aliquet a in ex. In auctor tincidunt diam. Mauris pellentesque lectus ac felis facilisis sollicitudin. Etiam placerat, ex a volutpat suscipit, risus purus lacinia leo, vel posuere est elit non justo. Vestibulum et orci vel ligula venenatis volutpat. Sed eu neque elementum, porta velit et, vestibulum neque</p>
+       <h2 class="text-center mt-2 mb-4">Open Position </h2>
+        <p> 
+      {% for job in jobs %}
+          {% include 'item.html' %}
+        {% endfor %}
+       <div class="text-center">
+         <button class="btn btn-primary btn-lg"> Contact Us </button>
+         <p class="mt-2 mb-4"> Copyright 2023, Website </p>
+      </body>
+  </html>
