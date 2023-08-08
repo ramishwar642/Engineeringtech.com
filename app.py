@@ -38,7 +38,7 @@ def Hello_Engineer():
     return render_template("home.html",
                           jobs=JOBS,
                           company_name="Accenture")
-@app.route("/jobs")
+@app.route("/API/jobs")
 def list_jobs():
   return jsonify(JOBS)
 
