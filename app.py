@@ -7,7 +7,7 @@ JOBS = [
     'id' :1,
     'title' :'Data Analyst',
     'location' :'bengaluru',
-    'salary' :'Rs,15,00,000'
+    'salary' :'Rs,12,00,000'
   },
 
    {
@@ -34,11 +34,11 @@ JOBS = [
 
 
 @app.route("/")
-def Hello_Engineer():
-    return render_template("home.html",
+def Hello_Engineeringbrain():
+    return render_template('home.html',
                           jobs=JOBS,
                           company_name="Accenture")
-@app.route("/API/jobs")
+@app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
 
