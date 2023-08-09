@@ -37,7 +37,7 @@ JOBS = [
 def Hello_Engineeringbrain():
     return render_template('home.html',
                           jobs=JOBS,
-                          company_name="Accenture")
+                          company_name="Engineering")
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)

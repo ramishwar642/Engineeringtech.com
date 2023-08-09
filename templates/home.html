@@ -8,19 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
       #banner{
-        height:360px;
+        height:580px;
         width:100%;
         object-fit :cover;
+        font-family: "Lucida Console", "Courier New", monospace
+        
       }
     </style>
   </head>
   <body>
-    <img class="img-fluid" id="banner" src = "https://engineeringbraincom.iamramishwar99.repl.co/static/banner.jpg">
+    <h1 class="text-center mt-2 mb-4">Engineer Careers </h1>
+    <img class="img-fluid" id="banner" src = "https://engineeringtechcom.iamramishwar99.repl.co/static/meeting.jpg">
      <div class="container">
     <h1 class="text-center mt-2 mb-4">
-      {{company_name}} Careers
+      {{company_name}} About
     </h1>
-     <p class="lead">Pellentesque in lorem id sem semper vehicula ut ut turpis. Suspendisse dignissim lorem est, ut sagittis elit rutrum placerat. Nullam mattis risus ac augue porta, quis auctor lectus luctus. Sed lobortis mattis accumsan. Phasellus ut tellus vitae justo suscipit aliquet a in ex. In auctor tincidunt diam. Mauris pellentesque lectus ac felis facilisis sollicitudin. Etiam placerat, ex a volutpat suscipit, risus purus lacinia leo, vel posuere est elit non justo. Vestibulum et orci vel ligula venenatis volutpat. Sed eu neque elementum, porta velit et, vestibulum neque</p>
+     <p class="lead">A software engineer’s typical day begins either in the office or at home, if they work remotely. Each engineer is different. Their routine usually depends on their employer and personal work preferences. However, a typical day for a software engineer might look something like this:
+Software engineers start their day by working on their coding projects. Ideally, engineers set aside time every day to enter a “mental flow” state, which allows them to focus on solving problems and developing reliable solutions.Software engineers may attend meetings interspersed throughout the day. The afternoon might involve reviewing emails and checking in with colleagues on shared projects.</p>
        <h2 class="text-center mt-2 mb-4">Job Opening </h2>
         <p> 
       {% for job in jobs %}
@@ -28,6 +32,6 @@
         {% endfor %}
        <div class="text-center">
          <button class="btn btn-primary btn-lg"> Contact Us </button>
-         <p class="mt-2 mb-4"> Copyright 2023, Website </p>
+         <p class="mt-2 mb-4"> Copyright-2023 || 09-08-2023 || Ramishwar's Website </p>
       </body>
   </html>
