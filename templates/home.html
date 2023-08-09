@@ -12,26 +12,34 @@
         width:100%;
         object-fit :cover;
         font-family: "Lucida Console", "Courier New", monospace
+        margin-bottom : 16px;
         
       }
     </style>
   </head>
   <body>
-    <h1 class="text-center mt-2 mb-4">Engineer Careers </h1>
+    {% include 'nav.html' %}
     <img class="img-fluid" id="banner" src = "https://engineeringtechcom.iamramishwar99.repl.co/static/meeting.jpg">
      <div class="container">
     <h1 class="text-center mt-2 mb-4">
-      {{company_name}} About
+      {{company_name}} Careers 
     </h1>
+       <div class="row" style ="margin-bottom:16px">
+         <div class="col-md-6"
      <p class="lead">A software engineer’s typical day begins either in the office or at home, if they work remotely. Each engineer is different. Their routine usually depends on their employer and personal work preferences. However, a typical day for a software engineer might look something like this:
-Software engineers start their day by working on their coding projects. Ideally, engineers set aside time every day to enter a “mental flow” state, which allows them to focus on solving problems and developing reliable solutions.Software engineers may attend meetings interspersed throughout the day. The afternoon might involve reviewing emails and checking in with colleagues on shared projects.</p>
+Software engineers start their day by working on their coding projects. Ideally, engineers set aside time every day to enter a “mental flow” state, which allows them to focus on solving problems and developing reliable solutions.Software engineers may attend meetings interspersed throughout the day. The afternoon might involve reviewing emails and checking in with colleagues on shared projects.
+     </p>
+         </div>
+         <div class="d-none d-md-block col-md-6">
+         <img src="/static/people.jpg" style="height:300px; border-radius:4px;">
+       </div>
        <h2 class="text-center mt-2 mb-4"> Open Positions  </h2>
-        <p> 
-      {% for job in jobs %}
+      <p>
+        {% for job in jobs %}
           {% include 'item.html' %}
         {% endfor %}
        <div class="text-center">
-         <button class="btn btn-primary btn-lg"> Contact Us </button>
-         <p class="mt-2 mb-4"> Copyright-2023 || 09-08-2023 || Ramishwar's Website </p>
+         <a class="btn btn-primary btn-lg" href="mailto:Hello@engineeringtech.ai?subject=Question%20about%20job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20questions%3A%3Center%20question%20here%3E%0D%0A"> Contact Us </a>
+         {% include 'footer.html' %}
       </body>
   </html>
